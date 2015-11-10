@@ -2211,6 +2211,7 @@ See `org-drill' for more details."
     (org-save-outline-visibility t
       (save-restriction
 		(org-previous-visible-heading)
+		(recenter)
         (org-narrow-to-subtree)
         (org-show-subtree)
         (org-cycle-hide-drawers 'all)
