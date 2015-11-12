@@ -2210,7 +2210,7 @@ See `org-drill' for more details."
     (setq drill-answer nil)
     (org-save-outline-visibility t
       (save-restriction
-		(org-previous-visible-heading)
+		(org-previous-visible-heading 0)
 		(recenter)
         (org-narrow-to-subtree)
         (org-show-subtree)
