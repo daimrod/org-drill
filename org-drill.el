@@ -1110,7 +1110,7 @@ Returns a list: (INTERVAL REPEATS EF FAILURES MEAN TOTAL-REPEATS OFMATRIX), wher
 
 (defun get-optimal-factor-sm5 (n ef of-matrix)
   (let ((factors (assoc n of-matrix)))
-    (or (and factors
+    (or (and factors (> n 1)
              (let ((ef-of (assoc ef (cdr factors))))
                (and ef-of (cdr ef-of))))
         (initial-optimal-factor-sm5 n ef))))
