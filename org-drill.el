@@ -1642,7 +1642,7 @@ Consider reformulating the item to make it easier to remember.\n"
       (if (eql ch org-drill--tags-key)
           (org-set-tags-command)))
     (if returns
-        (or (cdr (assoc ch returns)))
+        (cdr (or (assoc ch returns) '(t . t)))
       (cond
        ((eql ch org-drill--quit-key) nil)
        ((eql ch org-drill--edit-key) 'edit)
