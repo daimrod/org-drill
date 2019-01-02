@@ -1,46 +1,45 @@
 ;;; org-drill.el --- Self-testing using spaced repetition -*- coding: utf-8-unix; -*-
-;;;
-;;; Copyright (C) 2010-2015  Paul Sexton
-;;;
-;;; Author: Paul Sexton <eeeickythump@gmail.com>
-;;; Version: 2.6.1
-;;; Keywords: flashcards, memory, learning, memorization
-;;; Repository at http://bitbucket.org/eeeickythump/org-drill/
-;;;
-;;; This file is not part of GNU Emacs.
-;;;
-;;; This program is free software; you can redistribute it and/or modify
-;;; it under the terms of the GNU General Public License as published by
-;;; the Free Software Foundation, either version 3 of the License, or
-;;; (at your option) any later version.
-;;;
-;;; This program is distributed in the hope that it will be useful,
-;;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;;; GNU General Public License for more details.
-;;;
-;;; You should have received a copy of the GNU General Public License
-;;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
-;;;
-;;;
-;;; Synopsis
-;;; ========
-;;;
-;;; Within an Org mode outline or outlines, headings and associated content are
-;;; treated as "flashcards". Spaced repetition algorithms are used to conduct
-;;; interactive "drill sessions", where a selection of these flashcards is
-;;; presented to the student in random order. The student rates his or her
-;;; recall of each item, and this information is used to schedule the item for
-;;; later revision.
-;;;
-;;; Each drill session can be restricted to topics in the current buffer
-;;; (default), one or several files, all agenda files, or a subtree. A single
-;;; topic can also be tested.
-;;;
-;;; Different "card types" can be defined, which present their information to
-;;; the student in different ways.
-;;;
-;;; See the file README.org for more detailed documentation.
+
+;; Copyright (C) 2010-2015  Paul Sexton
+
+;; Author: Paul Sexton <eeeickythump@gmail.com>
+;; Version: 2.6.1
+;; Keywords: flashcards, memory, learning, memorization
+;; URL: http://bitbucket.org/eeeickythump/org-drill/
+
+;; This file is not part of GNU Emacs.
+;;
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;;
+;;
+;;; Commentary
+
+;; Within an Org mode outline or outlines, headings and associated content are
+;; treated as "flashcards". Spaced repetition algorithms are used to conduct
+;; interactive "drill sessions", where a selection of these flashcards is
+;; presented to the student in random order. The student rates his or her
+;; recall of each item, and this information is used to schedule the item for
+;; later revision.
+;;
+;; Each drill session can be restricted to topics in the current buffer
+;; (default), one or several files, all agenda files, or a subtree. A single
+;; topic can also be tested.
+;;
+;; Different "card types" can be defined, which present their information to
+;; the student in different ways.
+;;
+;; See the file README.org for more detailed documentation.
 
 
 (eval-when-compile (require 'cl))
@@ -3495,3 +3494,5 @@ returns its return value."
 
 
 (provide 'org-drill)
+
+;;; org-drill.el ends here
